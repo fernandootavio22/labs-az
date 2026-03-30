@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nginx-server:
+    image: nginx:alpine
+    container_name: meu-nginx-lab
+    ports:
+      - "80:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+    restart: always
