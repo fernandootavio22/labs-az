@@ -12,7 +12,7 @@ def home():
     <html>
         <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
             <h1> Lab Dockerfile - AZCORP</h1>
-            <p><strong>Status:</strong> Ativo e operando em container</p>
+            <p><strong>Status:</strong> Ativo</p>
             <p><strong>Horário do Servidor:</strong> {agora}</p>
             <p><strong>ID do Container:</strong> {hostname}</p>
             <hr>
