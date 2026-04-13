@@ -8,5 +8,5 @@ RUN pip install flask
 
 EXPOSE 5000
 
-# comando que liga a aplicação quando o container inicia
+# startar a app
 CMD ["python", "app.py"]
