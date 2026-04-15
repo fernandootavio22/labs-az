@@ -2,7 +2,7 @@ from flask import Flask
 import datetime
 import socket
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -12,7 +12,7 @@ def home():
     <html>
         <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
             <h1> Lab Dockerfile - AZCORP</h1>
-            <p><strong>Status:</strong> Ativo</p>
+            <p><strong>Status:</strong> Ativo </p>
             <p><strong>Horário do Servidor:</strong> {agora}</p>
             <p><strong>ID do Container:</strong> {hostname}</p>
             <hr>
@@ -20,5 +20,5 @@ def home():
     </html>
     """
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
